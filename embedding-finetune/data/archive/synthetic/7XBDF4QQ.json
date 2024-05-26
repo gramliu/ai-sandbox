@@ -1,0 +1,9 @@
+{
+  "note": "Today I worked on implementing a new sequence modeling architecture called Mamba. The key ideas behind Mamba are:\n\n1. It uses selective state space models (S6) that allow the model parameters to depend on the input sequence. This enables the model to selectively propagate or forget information along the sequence length, which is crucial for tasks like selective copying.\n\n2. To efficiently compute the S6 models, Mamba uses a hardware-aware parallel scan algorithm that leverages the memory hierarchy of modern GPUs. This provides significant speedups of 20-40x over naive implementations.\n\n3. Mamba simplifies the architecture compared to previous state space models by combining the state transition and output functions into a single homogeneous block.\n\nI started by implementing the core S6 module and the parallel scan algorithm. Getting the GPU kernel optimizations right was tricky, but I was able to get close to the theoretical peak performance. Next, I integrated the S6 module into the overall Mamba architecture and trained it on some language modeling datasets.\n\nThe results were really promising - Mamba matched or even exceeded the performance of Transformers of the same size, while being 5x faster at inference! I also verified that Mamba could solve the selective copying task that stumps previous linear-time models.\n\nOverall, I'm really excited about Mamba's potential as an efficient and scalable sequence modeling backbone. With its linear-time complexity and strong empirical results, it could enable new applications that require processing extremely long sequences. Tomorrow, I plan to experiment with using Mamba for some audio and genomics tasks to further test its capabilities as a general sequence model.",
+  "references": [
+    "MAMBA",
+    "S6M",
+    "PARALLEL_SCAN",
+    "7XBDF4QQ"
+  ]
+}

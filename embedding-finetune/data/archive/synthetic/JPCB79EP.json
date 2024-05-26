@@ -1,0 +1,9 @@
+{
+  "note": "Today I worked on implementing the DiLoCo algorithm for distributed training of large language models. The key idea is to perform many local optimization steps on each worker before communicating gradients, which drastically reduces communication overhead.\n\nIn the morning, I set up a small cluster of 4 machines to simulate a distributed training environment. I implemented the DiLoCo optimizer in PyTorch, which combines an inner loop of AdamW steps with an outer loop of federated averaging and Nesterov momentum updates.\n\nAfter lunch, I ran some experiments training a GPT-like model on the C4 dataset. With DiLoCo using 500 inner steps, I was able to match the performance of fully synchronous training while communicating 500x less! The reduced communication enabled much faster training.\n\nIn the afternoon, I experimented with different data distributions across workers to test DiLoCo's robustness. Surprisingly, even when each worker had a completely disjoint subset of the data, DiLoCo still converged smoothly. This is a major advantage over traditional distributed training.\n\nFinally, I simulated scenarios where workers dropped out or new workers joined during training. DiLoCo seamlessly adapted, leveraging new resources when available and gracefully handling worker failures. This flexibility could enable training massive models across globally distributed compute clusters.\n\nOverall, DiLoCo seems like a promising approach to make large language model training much more communication-efficient and robust. I'm excited to try scaling it up to larger models and cluster sizes.",
+  "references": [
+    "JPCB79EP",
+    "WCT6N6H9",
+    "7ZSCH5PA",
+    "DCTMFCIV"
+  ]
+}

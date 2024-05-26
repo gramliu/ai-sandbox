@@ -1,0 +1,14 @@
+{
+  "note": "Today I spent some time exploring the potential of large language models like GPT-4 for automated mathematical theory exploration. I started by reading through the paper and understanding the key ideas and findings.\n\nIn the morning, I set up an environment to interact with GPT-4 through its API. I defined a simple mathematical theory about insertion sort and asked GPT-4 to generate conjectures and lemmas about the properties of this sorting algorithm. It was really fascinating to see GPT-4 produce a stream of plausible lemmas, some quite intricate, just from the basic definitions I provided. A few of the lemmas looked obviously true, while others required more analysis.\n\nAfter lunch, I moved on to a more complex theory from the Isabelle/HOL proof assistant about functional geometry. Providing the background definitions to GPT-4 was trickier in this case due to the higher-order logic and type system involved. However, GPT-4 was still able to generate a range of conjectures after some prompting, though they tended to be more generic properties about associativity, commutativity etc. rather than domain-specific insights. I spent some time analyzing and attempting to prove some of the more interesting conjectures.\n\nIn the evening, I read through the paper's discussion on the advantages and limitations of large language models for this application. I can see the appeal of their flexibility and ability to produce complex conjectures, but evaluating them is challenging due to their black-box nature. I made some notes on potential ways to combine the strengths of LLMs with symbolic reasoning approaches for a hybrid neuro-symbolic system.\n\nOverall, it was a fascinating exploration into the capabilities and inner workings of GPT-4 on this novel task. I'm really excited about the future potential of large language models and other AI systems to augment and accelerate mathematical discovery. Lots of open questions remain to be explored!",
+  "references": [
+    "X64N5H62",
+    "2HKPJFBN",
+    "TC8YPCJY",
+    "WCT6N6H9",
+    "X64N5H62",
+    "2HKPJFBN",
+    "TC8YPCJY",
+    "WCT6N6H9",
+    "7U6GVXP7"
+  ]
+}

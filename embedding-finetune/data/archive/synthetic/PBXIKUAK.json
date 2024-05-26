@@ -1,0 +1,9 @@
+{
+  "note": "Today I worked on exploring the capabilities of the new phi-3-mini language model from OpenAI. This compact 3.8 billion parameter model can run locally on a smartphone yet performs remarkably well on NLP benchmarks, rivaling much larger models.\n\nIn the morning, I downloaded the phi-3-mini model and set it up on my phone. I was impressed by how quickly it loaded given its size. I spent some time going through the documentation and examples to understand its training process using filtered web data and synthetic data.\n\nFor the afternoon, I decided to put phi-3-mini through its paces. I tried it on various language tasks like question-answering, text summarization, and even some light creative writing prompts. The results were quite impressive - the model demonstrated strong language understanding and generation capabilities despite its compact size.\n\nI also explored some of the safety and alignment techniques used during phi-3-mini's training, like red-teaming and automated testing for potential risks. While not perfect, it seemed to handle sensitive topics reasonably well.\n\nIn the evening, I experimented with running phi-3-mini in tandem with a search engine to augment its factual knowledge. This allowed me to get more accurate and up-to-date information compared to just relying on the model's training data alone.\n\nOverall, I'm really excited about the potential of highly capable yet compact language models like phi-3-mini. Being able to run them locally on-device opens up many privacy-preserving applications. I'll definitely be following the development of larger phi-3 models and their real-world use cases.",
+  "references": [
+    "PBXIKUAK",
+    "2HKPJFBN",
+    "TC8YPCJY",
+    "WCT6N6H9"
+  ]
+}

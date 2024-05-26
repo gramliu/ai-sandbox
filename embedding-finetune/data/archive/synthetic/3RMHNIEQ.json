@@ -1,0 +1,8 @@
+{
+  "note": "Today I worked on a new technique for editing images using text prompts and diffusion models. The key idea is to leverage the cross-attention maps that connect words in the prompt to spatial regions in the generated image.\n\nFirst, I analyzed how the cross-attention layers work in a pre-trained text-to-image diffusion model. I found that by injecting the attention maps from an existing image into the diffusion process for an edited prompt, I could preserve the overall composition while applying localized text edits.\n\nTo test this, I replaced individual words in prompts and regenerated the images using the original attention maps. This allowed me to change specific objects or attributes while keeping the background and layout intact - all without any user-provided masks!\n\nI also experimented with adding new words to prompts while freezing attention on previous tokens. This enabled global edits like changing the style or lighting of an entire scene.\n\nOne really cool application was re-weighting the attention for certain words to control how strongly they influenced the image. By amplifying or attenuating the attention, I could make objects more or less prominent based on the corresponding word.\n\nFinally, I tried editing real photographs by first inverting them into the diffusion model's latent space. The inversions weren't perfect, but I could use the attention maps to paste back unedited regions, avoiding distortions.\n\nOverall, this prompt-to-prompt editing approach seems really promising for intuitive text-driven image manipulation. I'm excited to keep exploring and refining these techniques!",
+  "references": [
+    "2HKPJFBN",
+    "3RMHNIEQ",
+    "TC8YPCJY"
+  ]
+}

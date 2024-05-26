@@ -1,0 +1,8 @@
+{
+  "note": "Today I worked on implementing the Low-Rank Adaptation (LoRA) technique for fine-tuning large language models like GPT-3. The key idea is to freeze the pre-trained model weights and inject trainable low-rank matrices into each Transformer layer during fine-tuning. This drastically reduces the number of trainable parameters compared to full fine-tuning.\n\nIn the morning, I set up the codebase by forking the official LoRA repository and installing the required dependencies. I spent some time going through the code to understand how the low-rank matrices are injected into the model layers.\n\nAfter lunch, I ran some experiments to fine-tune GPT-2 on the GLUE benchmark tasks using LoRA. I was really impressed by how much faster the fine-tuning was compared to the baseline, while still matching the performance! The low GPU memory usage of LoRA also meant I could run bigger batch sizes.\n\nIn the evening, I explored combining LoRA with prefix tuning, which is another efficient way to adapt language models. Interestingly, using both methods together gave me another boost in performance on certain tasks. I'm really excited about these parameter-efficient techniques that could make it feasible to personalize huge models like GPT-3 for individual users and applications.\n\nBefore wrapping up, I spent some time analyzing the ranks of the trained LoRA matrices. As the paper mentioned, I found the ranks to be surprisingly low, suggesting that task-specific adaptation can indeed be captured very compactly. I'm really looking forward to trying out LoRA on some of my own projects!",
+  "references": [
+    "QES8DF5I",
+    "7U6GVXP7",
+    "WCT6N6H9"
+  ]
+}
